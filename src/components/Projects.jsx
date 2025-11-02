@@ -3,33 +3,33 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Neon Portfolio',
+    title: 'HighlightsHub',
     description:
-      'A sleek, animated portfolio with 3D interactions and smooth page transitions.',
-    tech: ['React', 'Tailwind', 'Framer Motion', 'Spline'],
+      "An intelligent Streamlit app that pulls out the 3 most impactful moments from any video with VideoDB's AI scene analysis, then generates clips with auto-subtitles.",
+    tech: ['Python', 'Streamlit', 'VideoDB', 'FFmpeg'],
     links: {
-      github: '#',
-      demo: '#',
+      github: 'https://github.com/mohan182004/HighlightHub',
+      demo: '',
     },
   },
   {
-    title: 'Study Planner',
+    title: 'AskMyPDF',
     description:
-      'A productivity web app to schedule sessions, track goals, and visualize progress.',
-    tech: ['Vite', 'Zustand', 'Chart.js'],
+      'Upload one or more PDFs and ask questions in natural language. Get instant answers and summaries powered by LLMs.',
+    tech: ['React', 'Python', 'LLM', 'Vector DB'],
     links: {
-      github: '#',
-      demo: '#',
+      github: 'https://github.com/mohan182004/AskMyPDF',
+      demo: '',
     },
   },
   {
-    title: 'Dev Blog',
+    title: 'Serenade',
     description:
-      'A minimalist blog engine with markdown support and code highlighting.',
-    tech: ['Next.js', 'MDX', 'Prism'],
+      'Open-source local music player, downloader, and audio visualizer built with Electron + React. Winner at FOSS Hack 2025.',
+    tech: ['Electron', 'React', 'Node.js'],
     links: {
-      github: '#',
-      demo: '#',
+      github: 'https://github.com/crowaltz24/serenade',
+      demo: 'https://youtu.be/vaxG7x0cvm8',
     },
   },
 ];
@@ -59,7 +59,7 @@ const Projects = () => {
         transition={{ delay: 0.1, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className="mt-3 max-w-2xl text-white/70"
       >
-        A curated selection of things I	built recently. Clean code, delightful UX, and learning in public.
+        A few things I’ve built recently — focused on intelligent tools and delightful interfaces.
       </motion.p>
 
       <motion.div
@@ -89,18 +89,26 @@ const Projects = () => {
               ))}
             </div>
             <div className="mt-6 flex items-center gap-3">
-              <a
-                href={p.links.github}
-                className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-2 text-xs font-medium text-white transition hover:bg-white/20"
-              >
-                <Github size={16} /> Code
-              </a>
-              <a
-                href={p.links.demo}
-                className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-2 text-xs font-semibold text-black transition hover:-translate-y-0.5"
-              >
-                <ExternalLink size={16} /> Live demo
-              </a>
+              {p.links.github && (
+                <a
+                  href={p.links.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-2 text-xs font-medium text-white transition hover:bg-white/20"
+                >
+                  <Github size={16} /> Code
+                </a>
+              )}
+              {p.links.demo && (
+                <a
+                  href={p.links.demo}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-white px-3 py-2 text-xs font-semibold text-black transition hover:-translate-y-0.5"
+                >
+                  <ExternalLink size={16} /> Live demo
+                </a>
+              )}
             </div>
           </motion.article>
         ))}

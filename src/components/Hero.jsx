@@ -23,7 +23,7 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="text-4xl font-bold leading-tight text-white sm:text-6xl"
         >
-          Hey, I'm Alex — a tech student building playful, modern projects.
+          Hey, I'm Mohan Chaturvedi — a tech student building playful, modern projects.
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +31,7 @@ const Hero = () => {
           transition={{ delay: 0.15, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="mt-4 max-w-2xl text-base text-white/80 sm:text-lg"
         >
-          I explore web, 3D, and thoughtful interfaces. Scroll to see my work.
+          I love crafting interactive web experiences, exploring 3D, and learning by building.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

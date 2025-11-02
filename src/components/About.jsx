@@ -20,12 +20,11 @@ const About = () => {
         className="mt-6 grid gap-8 md:grid-cols-2"
       >
         <p className="text-white/80">
-          I'm a curious tech student focused on crafting intuitive interfaces and learning by building. I love mixing
-          clean design with interactive experiences — from web apps to playful 3D scenes. When I'm not coding, I'm
-          sketching ideas, reading about product design, or exploring open source.
+          I'm Mohan Chaturvedi, a curious tech student focused on crafting intuitive interfaces and learning by
+          building. I enjoy mixing clean design with interactive experiences — from web apps to playful 3D scenes.
         </p>
         <div className="grid grid-cols-2 gap-4">
-          {['React', 'TypeScript', 'Tailwind', 'Node.js', 'Framer Motion', 'Figma'].map((skill) => (
+          {['React', 'TypeScript', 'Tailwind', 'Node.js', 'Framer Motion', 'Python'].map((skill) => (
             <div
               key={skill}
               className="rounded-xl border border-white/10 bg-white/5 p-4 text-sm text-white/80 shadow-inner shadow-black/20"

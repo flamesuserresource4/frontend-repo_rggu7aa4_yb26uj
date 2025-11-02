@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Github, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -26,13 +26,13 @@ const Contact = () => {
 
       <div className="mt-8 flex flex-wrap items-center gap-3">
         <a
-          href="mailto:alex.dev@example.com"
+          href="mailto:chaturvedimohan99@gmail.com"
           className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-black transition hover:-translate-y-0.5"
         >
-          <Mail size={18} /> Email me
+          <Mail size={18} /> chaturvedimohan99@gmail.com
         </a>
         <a
-          href="https://github.com/"
+          href="https://github.com/mohan182004"
           target="_blank"
           rel="noreferrer"
           className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur transition hover:bg-white/20"
@@ -40,24 +40,16 @@ const Contact = () => {
           <Github size={18} /> GitHub
         </a>
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/mohan-chaturvedi-5578b8251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           target="_blank"
           rel="noreferrer"
           className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur transition hover:bg-white/20"
         >
           <Linkedin size={18} /> LinkedIn
         </a>
-        <a
-          href="https://twitter.com/"
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur transition hover:bg-white/20"
-        >
-          <Twitter size={18} /> Twitter
-        </a>
       </div>
 
-      <p className="mt-12 text-xs text-white/50">© {new Date().getFullYear()} Alex — Crafted with React, Tailwind, and a sprinkle of motion.</p>
+      <p className="mt-12 text-xs text-white/50">© {new Date().getFullYear()} Mohan Chaturvedi — Crafted with React, Tailwind, and a sprinkle of motion.</p>
     </section>
   );
 };
